@@ -1,3 +1,15 @@
+/* menu */
+header .container #sidebar ul.menu li.menu-item > a h4 {
+    margin-right: 10px;
+    font-weight: bold;
+}
+header .container #top-head ul li a {
+    color: #303030;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+/* fotter */
 footer{
     background: black;
 }
@@ -31,7 +43,7 @@ margin-left: -50px; */
 }
 footer .content-foot .row:last-child p {
     color: #808080;
-    margin-left: 250px;
+    margin-left: 200px;
 }
 /* .p-t-18 .trans-04{
  
