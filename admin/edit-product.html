@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHỈNH SỬA SẢN PHẨM</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../themes/css/admin.css"
+>
+</head>
+<body>
+    <header>
+        <div class="container-fluid p-0">
+            <div class="bg-dark text-end">
+                <button class="btn text-light">Đăng xuất Admin</button>
+            </div>
+            <nav class="navbar navbar-expand-lg col">
+                <div class="container-md">
+                  <a class="navbar-brand" href="#">
+                    <img src="../images/logo-new.jpg" alt="" width="120">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">QL sản phẩm</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">QL Danh mục sản phẩm</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          QL đơn hàng
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Đơn may sẳn</a></li>
+                          <li><a class="dropdown-item" href="#">Đơn đặt may</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">QL người dùng</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">QL bình luận</a>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="bg-light">
+        <div class="container-md py-5">
+            <div class="row justify-content-center align-items-center">
+                <div class="col col-lg-3 text-center">
+                    <img src="../images/upload-img.png" alt="" width="300px" class="mb-3">
+                    <button class="btn btn-warning">Thay ảnh mới</button>
+                </div>
+                <div class="col col-lg-7">
+                    <form>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="nameP" placeholder="Tên sản phẩm" value="Áo dài 1">
+                            <label for="nameP">Tên sản phẩm</label>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col col-lg-4">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="codeP" placeholder="Mã sản phẩm" value="AD1" readonly>
+                                    <label for="codeP">Mã sản phẩm</label>
+                                </div>
+                            </div>
+                            <div class="col col-lg-4">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="codeP" placeholder="Số lượng sản phẩm" value="100">
+                                    <label for="codeP">Số lượng sản phẩm</label>
+                                </div>
+                            </div>
+                            <div class="col col-lg-4">
+                                <div class="form-floating">
+                                    <select class="form-select" id="slCate">
+                                        <option value="AD" selected>Áo dài</option>
+                                        <option value="VD">Váy đầm</option>
+                                        <option value="V">Vest</option>
+                                        <option value="AK">Áo khoác</option>
+                                        <option value="Q">Quần</option>
+                                        <option value="CV">Chân váy</option>
+                                        <option value="S">Set</option>
+                                    </select>
+                                    <label for="slCate">Danh mục sản phẩm</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col col-lg-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="priceP" placeholder="Giá sản phẩm" value="1000000">
+                                    <label for="priceP">Giá sản phẩm</label>
+                                </div>
+                            </div>
+                            <div class="col col-lg-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="pricesale" placeholder="Giá khuyến mãi" value="0">
+                                    <label for="pricesale">Giá khuyến mãi</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="txtDesp" style="height: 150px">Sản phẩm mới nhất đến từ nhà G15</textarea>
+                            <label for="txtDesp">Mô tả sản phẩm</label>
+                        </div>
+                        <button type="submit" class="btn btn-success">Cập nhật sản phẩm</button>
+                        <button type="submit" class="btn btn-danger">Hủy</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

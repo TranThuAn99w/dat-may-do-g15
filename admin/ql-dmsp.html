@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QL SẢN PHẨM-ADMIN</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../themes/css/admin.css"
+>
+</head>
+<body>
+    <header>
+        <div class="container-fluid p-0">
+            <div class="bg-dark text-end">
+                <button class="btn text-light">Đăng xuất Admin</button>
+            </div>
+            <nav class="navbar navbar-expand-lg col">
+                <div class="container-md">
+                  <a class="navbar-brand" href="#">
+                    <img src="../images/logo-new.jpg" alt="" width="120">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">QL sản phẩm</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">QL Danh mục sản phẩm</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          QL đơn hàng
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Đơn may sẳn</a></li>
+                          <li><a class="dropdown-item" href="#">Đơn đặt may</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">QL người dùng</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">QL bình luận</a>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="bg-light">
+        <div class="container-md py-5">
+            <div class="row">
+                <div class="col col-lg-4">
+                    <h2 class="title mb-3 me-5">Thêm danh mục mới</h2>
+                    <form>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="codeCate" placeholder="Mã danh mục">
+                            <label for="codeCate">Mã danh mục</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="nameCate" placeholder="Tên danh mục">
+                            <label for="nameCate">Tên danh mục</label>
+                        </div>
+                        
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Mô tả sản phẩm" id="textDesp" style="height: 100px"></textarea>
+                            <label for="textDesp">Mô tả sản phẩm</label>
+                        </div>
+                        <button type="submit" class="btn btn-success">Tạo danh mục</button>
+                        <button type="submit" class="btn btn-danger">Hủy</button>
+                    </form>
+                </div>
+                <div class="col col-lg-8">
+                    <h2 class="title mb-3">Danh sách danh mục</h2>
+                    <table class="table table-bordered" id="mytable">
+                        <thead>
+                          <tr>
+                            <th class="col col-md-2">Mã danh mục</th>
+                            <th class="col col-md-3">Tên danh mục</th>
+                            <th class="col col-md-3">Số lượng sản phẩm</th>
+                            <th class="col col-md-3">&nbsp;</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>AD</td>
+                            <td>Áo dài</td>
+                            <td>15</td>
+                            <td class="pt-2">
+                              <div class="d-flex justify-content-between">
+                                <a href="" class="btn-primary btn">Xem</a>
+                                <a href="" class="btn-warning btn">Sửa</a>
+                                <a href="" class="btn-danger btn">Xóa</a>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                    <div class="pagination-container">
+                      <nav>
+                        <ul class="pagination"></ul>
+                      </nav>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="../themes/js/functPaginationTable.js"></script>
+</body>
+</html>

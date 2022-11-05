@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G15 | Khuyến mãi</title>
+    <link rel="shortcut icon" href="images/Logo_Ananas_Header.svg" type="image/x-icon">
+    <!-- THEME -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="themes/css/main.css">
+    <link rel="stylesheet" href="themes/css/style_section.css">
+</head>
+<body>
+  <!-- header -->
+  <header id="header">
+    <div class="container">
+      <div class="d-flex  align-items-center">
+        <div class="col col-md-2">
+          <a href="index.html">
+            <img src="images/logo-new.jpg" alt="" width="150"  id="logo"/>
+          </a>
+        </div>
+        <div class="col col-md-10">
+          <div id="top-head">
+            <div class="d-flex">
+              <div class="col col-md-2 col-sm-12"></div>
+              <div class="col col-md-5 col-sm-12">
+                <form id="searchBox">
+                  <div class="form-group d-flex">
+                    <input
+                      type="text"
+                      name="searchInput"
+                      id="searchInput"
+                      class="form-control"
+                      placeholder="Bạn cần tìm..."
+                      aria-describedby="helpId"
+                    />
+                    <button type="submit" class="btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <ul class="d-flex">
+                  <li>
+                    <a href="dang-nhap.html">
+                      <span id="get_name_user">Đăng nhập</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="dang-ky.html">Đăng ký</a>
+                  </li>
+                  <li>
+                    <a href="tra-cuu-don-hang.html">Tra cứu đơn hàng</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="sidebar">
+            <div class="container">
+              <div class="d-flex">
+                <div class="col-md-12">
+                  <ul class="menu d-flex">
+                    <li class="menu-item">
+                      <a href="ve-chung-toi.html" class="d-flex">
+                        <h4>GIỚI THIỆU</h4>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="san-pham.html" class="d-flex">
+                        <h4>SẢN PHẨM</h4>
+                        <i class="fas fa-chevron-down"></i>
+                        <div class="menu-sub">
+                          <a href="" class="menu-link d-flex">
+                            <img src="images/ao-dai.png" alt="" height="40">
+                            <h5>ÁO DÀI</h5>
+                          </a>
+                          <a href="" class="menu-link d-flex">
+                            <img src="images/dress-icon.png" alt="" height="40">
+                            <h5>ĐẦM, VÁY</h5>
+                          </a>
+                          <a href="" class="menu-link d-flex">
+                            <img src="images/coat.png" alt="" height="40">
+                            <h5>VEST</h5>
+                          </a>
+                          <a href="" class="menu-link d-flex">
+                            <img src="images/pencil-skirt.png" alt="" height="40">
+                            <h5>CHÂN VÁY</h5>
+                          </a>
+                          <a href="" class="menu-link d-flex">
+                            <img src="images/pegged-pants.png" alt="" height="40">
+                            <h5>QUẦN</h5>
+                          </a>
+                          <a href="" class="menu-link d-flex">
+                            <img src="images/clothes.png" alt="" height="40">
+                            <h5>SET ĐỒ</h5>
+                          </a>
+                          <a href="" class="menu-link d-flex">
+                            <img src="images/leather-jacket.png" alt="" height="40">
+                            <h5>ÁO KHOÁC</h5>
+                          </a>
+                        </div>
+                      </a>
+                    </li>
+                    
+                    <li class="menu-item">
+                      <a href="sale-off.html" class="d-flex">
+                        <h4>KHUYẾN MÃI</h4>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="lien-he.html" class="d-flex">
+                        <h4>LIÊN HỆ</h4>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="discover-you.html" class="d-flex">
+                        <h4>TIN TỨC</h4>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="gio-hang.html" class="d-flex">
+                        <img src="images/cart-icon.png" alt="" width="24">
+                        (<span>1</span>)</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</header>
+  <section id="section_banner">
+    <div class="container-lg">
+        <div id="hotServiceCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+                <p class="carousel-item" data-bs-interval="3000">
+                    <strong>NHẬN ĐẶT MAY TRANG PHỤC THEO SỐ ĐO CỦA BẠN</strong>
+                </p>
+                <p class="carousel-item active" data-bs-interval="3000">
+                    <strong>TẶNG PHIẾU MUA HÀNG TRỊ GIÁ ĐẾN 10 TRIỆU !!!</strong>
+                </p>
+                <p class="carousel-item">
+                    <strong>NHẬN ĐỔI MỚI 100% NẾU SẢN PHẨM LỖI TỪ CỦA HÀNG</strong>
+                </p>
+              
+            </div>
+        </div>  
+    </div>
+  </section>
+  <main id="product_page">
+    <div class="container">
+      <div class="main__header">
+        <div class="breadcrumbs">
+          <a href="index.html">Trang chủ</a>
+          <span>/</span>
+          <a href="san-pham.html">Sản phẩm</a>
+          <span>/</span>
+          <strong>Giá siêu đặc biệt</strong>
+        </div>
+        <h1>Giá siêu đặc biệt</h1>
+      </div>
+      <div class="d-flex">
+        <article class="col col-md-3">
+              <section id="menu_side">
+                    <div class="row">
+                      <div class="col col-lg-12 menu-item">
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStatus" aria-expanded="true" aria-controls="collapseStatus" >
+                          Trạng thái<i class="fas fa-chevron-up"></i>
+                        </button>
+                        <div class="collapse show" id="collapseStatus">
+                          <ul>
+                            <li>
+                              <a href="#">Sản phẩm bán chạy</a>
+                            </li>
+                            <li>
+                              <a href="#">Sản phẩm nổi bật</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col col-lg-12 menu-item">
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCate" aria-expanded="true" aria-controls="collapseCate" >
+                          Dòng sản phẩm <i class="fas fa-chevron-up"></i>
+                        </button>
+                        <div class="collapse show" id="collapseCate">
+                          <ul>
+                            <li>
+                              <a href="#">Váy dạ hội</a>
+                            </li>
+                            <li>
+                              <a href="#">Đầm, váy</a>
+                            </li>
+                            <li>
+                              <a href="#">Áo dài</a>
+                            </li>
+                            <li>
+                              <a href="#">Vest</a>
+                            </li>
+                            <li>
+                              <a href="#">Chân váy</a>
+                            </li>
+                            <li>
+                              <a href="#">Quần</a>
+                            </li>
+                            <li>
+                              <a href="#">Set đồ</a>
+                            </li>
+                            <li>
+                              <a href="#">Áo khoác</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col col-lg-12 menu-item">
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrice" aria-expanded="true" aria-controls="collapsePrice" >
+                          Giá<i class="fas fa-chevron-up"></i>
+                        </button>
+                        <div class="collapse show" id="collapsePrice">
+                          <ul>
+                            <li>
+                              <a href="#">Dưới 1.000.000</a>
+                            </li>
+                            <li>
+                              <a href="#">Từ 1.000.000 đến 5.000.000</a>
+                            </li>
+                            <li>
+                              <a href="#">Từ 5.000.000</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col col-lg-12 menu-item">
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSaleoff" aria-expanded="true" aria-controls="collapseSaleoff" >
+                          Sản phẩm khuyến mãi <i class="fas fa-chevron-up"></i>
+                        </button>
+                        <div class="collapse show" id="collapseSaleoff">
+                          <ul>
+                            <li>
+                              <a href="#">Giá Siêu đặc biệt</a>
+                            </li>
+                            <li>
+                              <a href="#">Váy dạ hội</a>
+                            </li>
+                            <li>
+                              <a href="#">Đầm, váy</a>
+                            </li>
+                            <li>
+                              <a href="#">Áo dài</a>
+                            </li>
+                            <li>
+                              <a href="#">Vest</a>
+                            </li>
+                            <li>
+                              <a href="#">Chân váy</a>
+                            </li>
+                            <li>
+                              <a href="#">Quần</a>
+                            </li>
+                            <li>
+                              <a href="#">Set đồ</a>
+                            </li>
+                            <li>
+                              <a href="#">Áo khoác</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+              </section>
+        </article>
+        <article class="col col-md-9">
+              <section id="section_prod_list">
+                <div class="container">
+                  <div class="row justify-content-between align-items-center mb-3">
+                    <div class="col col-lg-3">
+                      <strong id="getTotalProduct"></strong> sản phẩm
+                    </div>
+                    <div class="col col-lg-3">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Mới nhất</option>
+                        <option value="1">Giá tăng dần</option>
+                        <option value="2">Giá giảm dần</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div id="page_prods" class="row--grid hip-grid products">
+                    <div class="card product-item hip-item">
+                      <img src="images/products/ao-dai/aodai(10).jpg" class="card-img-top" alt="">
+                      <div class="card-body text-center">
+                        <h3 class="card-title">Áo dài 1</h3>
+                        <p class="card-price">
+                          <span class="price">
+                              <del>1.280.000 VND</del>
+                          </span>
+                          <span class="price-sale">
+                              <strong>
+                                  980.000 VND
+                              </strong>
+                          </span>
+                        </p>
+                        <div class="card-btn">
+                          <button class="btn btn-like" value="ad1">
+                              <i class="fas fa-heart"></i>
+                          </button>
+                          <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+                          <a href="#" class="btn btn-dark">ĐẶT MAY</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card product-item hip-item">
+                      <img src="images/products/ao-dai/aodai(11).jpg" class="card-img-top" alt="">
+                      <div class="card-body text-center">
+                        <h3 class="card-title">Áo dài 2</h3>
+                        <p class="card-price">
+                          <span class="price">
+                              <strong>1.280.000 VND</strong>
+                          </span>
+                          <span class="price-sale">
+                              <strong>
+                                  980.000 VND
+                              </strong>
+                          </span>
+                        </p>
+                          <div class="card-btn">
+                              <button class="btn btn-like" value="ad2">
+                                  <i class="fas fa-heart"></i>
+                              </button>
+                              <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+                              <a href="#" class="btn btn-dark">ĐẶT MAY</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card product-item hip-item">
+                      <img src="images/products/ao-khoac/aokhoac(1).jpeg" class="card-img-top" alt="">
+                      <div class="card-body text-center">
+                        <h3 class="card-title">Áo khoác    2</h3>
+                        <p class="card-price">
+                          <span class="price">
+                              <del>1.280.000 VND</del>
+                          </span>
+                          <span class="price-sale">
+                              <strong>
+                                  980.000 VND
+                              </strong>
+                          </span>
+                        </p>
+                        <div class="card-btn">
+                          <button class="btn btn-like" value="ak2">
+                              <i class="fas fa-heart"></i>
+                          </button>
+                          <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+                          <a href="#" class="btn btn-dark">ĐẶT MAY</a>
+                    </div>
+                      </div>
+                    </div>
+                    <div class="card product-item hip-item">
+                      <img src="images/products/ao-khoac/aokhoac(3).jpg" class="card-img-top" alt="">
+                      <div class="card-body text-center">
+                        <h3 class="card-title">Áo khoác 3</h3>
+                        <p class="card-price">
+                          <span class="price">
+                              <del>1.280.000 VND</del>
+                          </span>
+                          <span class="price-sale">
+                              <strong>
+                                  980.000 VND
+                              </strong>
+                          </span>
+                        </p>
+                          <div class="card-btn">
+                              <button class="btn btn-like" value="ak3">
+                                  <i class="fas fa-heart"></i>
+                              </button>
+                              <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+                              <a href="#" class="btn btn-dark">ĐẶT MAY</a>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="card product-item hip-item">
+                      <img src="images/products/chan-vay/chan-vay(3).jpg" class="card-img-top" alt="">
+                      <div class="card-body text-center">
+                        <h3 class="card-title">Chân váy 1</h3>
+                        <p class="card-price">
+                          <span class="price">
+                              <del>920.000 VND</del>
+                          </span>
+                          <span class="price-sale">
+                              <strong>
+                                  580.000 VND
+                              </strong>
+                          </span>
+                        </p>
+                        <div class="card-btn">
+                          <button class="btn btn-like" value="ak3">
+                              <i class="fas fa-heart"></i>
+                          </button>
+                          <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+                          <a href="#" class="btn btn-dark">ĐẶT MAY</a>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="card product-item hip-item">
+                      <img src="images/products/da-hoi/dahoi(10).jpg" class="card-img-top" alt="">
+                      <div class="card-body text-center">
+                        <h3 class="card-title">Dạ Hội 1</h3>
+                        <p class="card-price">
+                          <span class="price">
+                              <del>4.220.000 VND</del>
+                          </span>
+                          <span class="price-sale">
+                              <strong>
+                                  3.980.000 VND
+                              </strong>
+                          </span>
+                        </p>
+                        <div class="card-btn">
+                          <button class="btn btn-like" value="ak3">
+                              <i class="fas fa-heart"></i>
+                          </button>
+                          <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+                          <a href="#" class="btn btn-dark">ĐẶT MAY</a>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="card product-item hip-item">
+                      <img src="images/products/set-do/setdo(13).jpg" class="card-img-top" alt="">
+                      <div class="card-body text-center">
+                        <h3 class="card-title">Set đồ 13</h3>
+                        <p class="card-price">
+                          <span class="price">
+                              <del>2.190.000 VND</del>
+                          </span>
+                          <span class="price-sale">
+                              <strong>
+                                  1.980.000 VND
+                              </strong>
+                          </span>
+                        </p>
+                        <div class="card-btn">
+                          <button class="btn btn-like" value="ak3">
+                              <i class="fas fa-heart"></i>
+                          </button>
+                          <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+                          <a href="#" class="btn btn-dark">ĐẶT MAY</a>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="card product-item hip-item">
+                      <img src="images/products/vay-dam/vaydam(15).jpg" class="card-img-top" alt="">
+                      <div class="card-body text-center">
+                        <h3 class="card-title">Váy Đầm 1</h3>
+                        <p class="card-price">
+                          <span class="price">
+                              <del>1.190.000 VND</del>
+                          </span>
+                          <span class="price-sale">
+                              <strong>
+                                  1.280.000 VND
+                              </strong>
+                          </span>
+                        </p>
+                        <div class="card-btn">
+                          <button class="btn btn-like" value="ak3">
+                              <i class="fas fa-heart"></i>
+                          </button>
+                          <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+                          <a href="#" class="btn btn-dark">ĐẶT MAY</a>
+                      </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </section>
+        </article>
+      </div>
+    </div>
+  </main>  
+    <!-- on_top_btn -->
+    <a href="#section_banner" type="button" id="to_top_btn" class="btn" data-toggle="tooltip" data-placement="top" title="Back to Top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="libs/hip.js"></script>
+    <script src="themes/js/main.js"></script>
+    <script>
+        $("#page_prods").hip({
+          itemsPerPage: 9,
+          itemsPerRow: 3,
+          itemGaps: '0',
+          paginationPos: 'left'
+        }); 
+    </script>
+</body>
+</html>

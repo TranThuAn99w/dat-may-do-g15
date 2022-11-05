@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G15 | Trang chủ</title>
+    <link rel="shortcut icon" href="images/logo-new.jpg" type="image/x-icon">
+    <!-- THEME -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="libs/Glider.js-master/glider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="themes/css/main.css">
+    <link rel="stylesheet" href="themes/css/style_section.css">
+</head>
+<body>
+<!-- header -->
+<header id="header">
+    <div class="container">
+      <div class="d-flex  align-items-center">
+        <div class="col col-md-2">
+          <a href="index.html">
+            <img src="images/logo-new.jpg" alt="" width="150"  id="logo"/>
+          </a>
+        </div>
+        <div class="col col-md-10">
+          <div id="top-head">
+            <div class="d-flex">
+              <div class="col col-md-2 col-sm-12"></div>
+              <div class="col col-md-5 col-sm-12">
+                <form id="searchBox">
+                  <div class="form-group d-flex">
+                    <input
+                      type="text"
+                      name="searchInput"
+                      id="searchInput"
+                      class="form-control"
+                      placeholder="Bạn cần tìm..."
+                      aria-describedby="helpId"
+                    />
+                    <button type="submit" class="btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <ul class="d-flex">
+                  <li>
+                    <a href="dang-nhap.html">
+                      <span id="get_name_user">Đăng nhập</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="dang-ky.html">Đăng ký</a>
+                  </li>
+                  <li>
+                    <a href="tra-cuu-don-hang.html">Tra cứu đơn hàng</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="sidebar">
+            <div class="container">
+              <div class="d-flex">
+                <div class="col-md-12">
+                  <ul class="menu d-flex">
+                    <li class="menu-item">
+                      <a href="ve-chung-toi.html" class="d-flex">
+                        <h4>GIỚI THIỆU</h4>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="san-pham.html" class="d-flex">
+                        <h4>SẢN PHẨM</h4>
+                        <i class="fas fa-chevron-down"></i>
+                        <div class="menu-sub">
+                          <a href="" class="menu-link d-flex">
+                            <h5>ÁO DÀI</h5>
+                          </a>
+                          <a href="" class="menu-link d-flex">
+                            <h5>ĐẦM, VÁY</h5>
+                          </a>
+                          <a href="" class="menu-link d-flex">
+                            <h5>VEST</h5>
+                          </a>
+                          <a href="" class="menu-link d-flex">
+                            <h5>CHÂN VÁY</h5>
+                          </a>
+                          <a href="" class="menu-link d-flex">
+                            <h5>QUẦN</h5>
+                          </a>
+                          <a href="" class="menu-link d-flex">
+                            <h5>SET ĐỒ</h5>
+                          </a>
+                          <a href="" class="menu-link d-flex">
+                            <h5>ÁO KHOÁC</h5>
+                          </a>
+                        </div>
+                      </a>
+                    </li>
+                    
+                    <li class="menu-item">
+                      <a href="sale-off.html" class="d-flex">
+                        <h4>KHUYẾN MÃI</h4>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="lien-he.html" class="d-flex">
+                        <h4>LIÊN HỆ</h4>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="tin-tuc.html" class="d-flex">
+                        <h4>TIN TỨC</h4>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="gio-hang.html" class="d-flex">
+                        <img src="images/cart-icon.png" alt="" width="24">
+                        (<span>1</span>)</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</header>
+<section id="section_banner">
+    <div class="container-lg">
+        <div id="hotServiceCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+                <p class="carousel-item" data-bs-interval="3000">
+                    <strong>NHẬN ĐẶT MAY TRANG PHỤC THEO SỐ ĐO CỦA BẠN</strong>
+                </p>
+                <p class="carousel-item active" data-bs-interval="3000">
+                    <strong>TẶNG PHIẾU MUA HÀNG TRỊ GIÁ ĐẾN 10 TRIỆU !!!</strong>
+                </p>
+                <p class="carousel-item">
+                    <strong>NHẬN ĐỔI MỚI 100% NẾU SẢN PHẨM LỖI TỪ CỦA HÀNG</strong>
+                </p>
+              
+            </div>
+        </div>  
+    </div>
+</section>   
+<main id="home_page">
+    <section id="poster_main">
+        <div class="container-fluid px-0">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="images/Banner_ForHer_3.png" class="d-block w-100" alt="..." height="730">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/slide-04.jpg" class="d-block w-100" alt="..." height="730">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slide-05.jpg" class="d-block w-100" alt="..." height="730">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <script>
+            $("#poster_main").ready(function(){
+                window.addEventListener('load', function(){
+                new Glider(document.querySelector('.glider--poster'), {
+                slidesToShow: 1,
+                dots: '.rect--poster',
+                draggable: true
+            });
+            })  
+            })            
+        </script>
+    </section>
+    <section id="product_arrival">
+        <div class="container">
+            <h2 class="text-center">SẢN PHẨM NỔI BẬT</h2>
+            <div class="row py-3 products">
+                <div class="col col-lg-3 p-2">
+                    <div class="card product-item">
+                        <img src="images/products/ao-dai/aodai(10).jpg" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                          <h3 class="card-title">Áo dài 1</h3>
+                          <p class="card-price">
+                            <span class="price">
+                                <del>1.280.000 VND</del>
+                            </span>
+                            <span class="price-sale">
+                                <strong>
+                                    980.000 VND
+                                </strong>
+                            </span>
+                          </p>
+                          <div class="card-btn">
+                            <button class="btn btn-like" value="ad1">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="btn btn-dark">ĐẶT MAY</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 p-2">
+                    <div class="card product-item">
+                        <img src="images/products/ao-dai/aodai(11).jpg" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                          <h3 class="card-title">Áo dài 2</h3>
+                          <p class="card-price">
+                            <span class="price">
+                                <strong>1.280.000 VND</strong>
+                            </span>
+                            <span class="price-sale">
+                                <strong>
+                                    <!-- 980.000 VND -->
+                                </strong>
+                            </span>
+                          </p>
+                            <div class="card-btn">
+                                <button class="btn btn-like" value="ad2">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="btn btn-dark">ĐẶT MAY</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 p-2">
+                    <div class="card product-item">
+                        <img src="images/products/ao-khoac/aokhoac(1).jpeg" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                          <h3 class="card-title">Áo khoác    2</h3>
+                          <p class="card-price">
+                            <span class="price">
+                                <del>1.280.000 VND</del>
+                            </span>
+                            <span class="price-sale">
+                                <strong>
+                                    980.000 VND
+                                </strong>
+                            </span>
+                          </p>
+                          <div class="card-btn">
+                            <button class="btn btn-like" value="ak2">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="btn btn-dark">ĐẶT MAY</a>
+                      </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 p-2">
+                    <div class="card product-item">
+                        <img src="images/products/ao-khoac/aokhoac(3).jpg" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                          <h3 class="card-title">Áo khoác 3</h3>
+                          <p class="card-price">
+                            <span class="price">
+                                <del>1.280.000 VND</del>
+                            </span>
+                            <span class="price-sale">
+                                <strong>
+                                    980.000 VND
+                                </strong>
+                            </span>
+                          </p>
+                            <div class="card-btn">
+                                <button class="btn btn-like" value="ak3">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="btn btn-dark">ĐẶT MAY</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 p-2">
+                    <div class="card product-item">
+                        <img src="images/products/chan-vay/chan-vay(3).jpg" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                          <h3 class="card-title">Chân váy 1</h3>
+                          <p class="card-price">
+                            <span class="price">
+                                <strong>920.000 VND</strong>
+                            </span>
+                            <span class="price-sale">
+                                <strong>
+                                    <!-- 980.000 VND -->
+                                </strong>
+                            </span>
+                          </p>
+                          <div class="card-btn">
+                            <button class="btn btn-like" value="ak3">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="btn btn-dark">ĐẶT MAY</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 p-2">
+                    <div class="card product-item">
+                        <img src="images/products/da-hoi/dahoi(10).jpg" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                          <h3 class="card-title">Dạ Hội 1</h3>
+                          <p class="card-price">
+                            <span class="price">
+                                <strong>4.220.000 VND</strong>
+                            </span>
+                            <span class="price-sale">
+                                <strong>
+                                    <!-- 980.000 VND -->
+                                </strong>
+                            </span>
+                          </p>
+                          <div class="card-btn">
+                            <button class="btn btn-like" value="ak3">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="btn btn-dark">ĐẶT MAY</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 p-2">
+                    <div class="card product-item">
+                        <img src="images/products/set-do/setdo(13).jpg" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                          <h3 class="card-title">Set đồ 13</h3>
+                          <p class="card-price">
+                            <span class="price">
+                                <del>2.190.000 VND</del>
+                            </span>
+                            <span class="price-sale">
+                                <strong>
+                                    1.980.000 VND
+                                </strong>
+                            </span>
+                          </p>
+                          <div class="card-btn">
+                            <button class="btn btn-like" value="ak3">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="btn btn-dark">ĐẶT MAY</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 p-2">
+                    <div class="card product-item">
+                        <img src="images/products/vay-dam/vaydam(15).jpg" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                          <h3 class="card-title">Váy Đầm 1</h3>
+                          <p class="card-price">
+                            <span class="price">
+                                <del>1.190.000 VND</del>
+                            </span>
+                            <span class="price-sale">
+                                <strong>
+                                    1.280.000 VND
+                                </strong>
+                            </span>
+                          </p>
+                          <div class="card-btn">
+                            <button class="btn btn-like" value="ak3">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="btn btn-dark">ĐẶT MAY</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a href="san-pham.html" class="btn btn-outline-dark">Xem thêm sản phẩm</a>
+            </div>
+        </div>
+    </section>
+    <section id="section_cate_product">
+        <div class="container">
+            <h2 class="text-center">DANH MỤC SẢN PHẨM</h2>
+            <div class="row">
+                <div class="col col-lg-3 p-2">
+                    <div class="card">
+                        <a href="">
+                            <img src="images/products/ao-dai/aodai(9).jpg" alt="" class="card-img-top">
+                            <h3 class="text-center card-title">ÁO DÀI</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col col-lg-3 p-2">
+                    <div class="card">
+                        <a href="">
+                            <img src="images/products/ao-khoac/aokhoac(2).jpeg" alt="" class="card-img-top">
+                            <h3 class="text-center card-title">ÁO KHOÁC</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col col-lg-3 p-2">
+                    <div class="card">
+                        <a href="">
+                            <img src="images/products/chan-vay/chan-vay(8).jpg" alt="" class="card-img-top">
+                            <h3 class="text-center card-title">CHÂN VÁY</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col col-lg-3 p-2">
+                    <div class="card">
+                        <a href="">
+                            <img src="images/products/da-hoi/dahoi(11).jpg" alt="" class="card-img-top">
+                            <h3 class="text-center card-title">DẠ HỘI</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col col-lg-3 p-2">
+                    <div class="card">
+                        <a href="">
+                            <img src="images/products/quan/Quan(2).jpg" alt="" class="card-img-top">
+                            <h3 class="text-center card-title">QUẦN</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col col-lg-3 p-2">
+                    <div class="card">
+                        <a href="">
+                            <img src="images/products/set-do/setdo(15).jpg" alt="" class="card-img-top">
+                            <h3 class="text-center card-title">SET ĐỒ</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col col-lg-3 p-2">
+                    <div class="card">
+                        <a href="">
+                            <img src="images/products/vay-dam/vaydam(13).jpg" alt="" class="card-img-top">
+                            <h3 class="text-center card-title">VÁY ĐẦM</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col col-lg-3 p-2">
+                    <div class="card">
+                        <a href="">
+                            <img src="images/products/vest/vestt(6).jpg" alt="" class="card-img-top">
+                            <h3 class="text-center card-title">VEST</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="poster_sup">
+        <div class="container-fluid p-0">
+            <img src="images/slide-01.jpg" alt="">
+        </div>
+    </section>
+    <section id="section_news">
+        <div class="container">
+            <h2 class="text-center mb-3">TIN TỨC</h2>
+            <div class="row mb-3">
+                <div class="col col-lg-4">
+                    <div class="card hip-item">
+                        <a href="tin-tuc-chi-tiet.html">
+                            <img src="images/phoi-do-voi-chan-vay-but-chi-yodyvn.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h4 class="card-title">
+                                Gợi ý 10 outfit phối đồ với chân váy bút chì sành điệu
+                              </h4>
+                              <p href="#" class="card-text">
+                                Chân váy bút chì được xem là trang phục được các cô nàng yêu thích và sử dụng trong suốt những năm vừa qua và chưa bao giờ là món đồ lỗi mốt. Phối đồ với chân váy bút chì ra sao? Cùng YODY tìm hiểu ngay với bài viết dưới đây nhé!
+                                  <i>Đọc thêm</i>
+                              </p>
+                            </div>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="col col-lg-4">
+                    <div class="card hip-item">
+                        <a href="#">
+                            <img src="images/post-1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h4 class="card-title">
+                                06 OUTFIT CÔNG SỞ CHO MỘT TUẦN TIẾT KIỆM THỜI GIAN
+                              </h4>
+                              <p href="#" class="card-text">
+                                Hiện nay không ít cơ quan, công ty chỉ quy định chung cho trang phục đi làm của nhân viên, không bắt buộc mặc đồng phục cố định nào. Vì vậy, chị em phụ nữ có thể thoải mái sáng tạo, thể hiện khả năng phối đồ khi đi làm của mình.
+                                  <i>Đọc thêm</i>
+                              </p>
+                            </div>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="col col-lg-4">
+                    <div class="card hip-item">
+                        <a href="#">
+                            <img src="images/post-2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h4 class="card-title">
+                                Chân váy đuôi cá dài mặc với áo gì để tôn dáng, luôn sành điệu?
+                              </h4>
+                              <p href="#" class="card-text">
+                                Chân váy đuôi cá những chiếc váy không còn xa lạ đối với phái đẹp không những tiện lợi còn đem lại sự sang chảnh. Vậy, chân váy đuôi cá dài mặc với áo gì? Mix chân váy đuôi cá mùa đông thế nào để thể hiện được phong cách của mình?
+                                  <i>Đọc thêm</i>
+                              </p>
+                            </div>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a href="tin-tuc.html" class="btn btn-outline-dark">Xem thêm tin tức</a>
+            </div>
+        </div>
+    </section>
+</main>
+    
+    <!-- on_top_btn -->
+    <a href="#section_banner" type="button" id="to_top_btn" class="btn" data-toggle="tooltip" data-placement="top" title="Back to Top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="themes/js/main.js"></script>
+</body>
+</html>
