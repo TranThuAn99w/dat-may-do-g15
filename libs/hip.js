@@ -108,7 +108,7 @@ jQuery.fn.hip = function(param) {
       '.hip-pagination {\n' +
       '  display: flex;\n' +
       '}\n' +
-      '.hip-pagination a {\n' +
+      '.hip-pagination a{\n' +
       'color: black;\n' +
       '  padding: 8px 16px;\n' +
       '  text-decoration: none;\n' +
@@ -129,15 +129,15 @@ jQuery.fn.hip = function(param) {
       var hip_item_length = jQuery(curObj).find(".hip-item").length;
       var page_length = Math.ceil(hip_item_length/itemsPerPage);
       var pagination = '<div class="hip-pagination" id="hip_page">' +
-        '<a href="#prev"><i class="fas fa-chevron-left"></i></a>';
+        '<a href="#prev" class="btn-prev"><i class="fas fa-chevron-left"></i></a>';
       for (var i = 1; i<=page_length; i++)
       {
         if (i===1)
-          pagination += '<a class="active" href="#'+i+'">'+i+'</a>';
+          pagination += '<a class="active page-item" href="#'+i+'">'+i+'</a>';
         else
-          pagination += '<a href="#'+i+'">'+i+'</a>';
+          pagination += '<a href="#'+i+'" class="page-item">'+i+'</a>';
       }
-      pagination += '<a href="#next"><i class="fas fa-chevron-right"></i></a>\n' +
+      pagination += '<a href="#next" class="btn-next"><i class="fas fa-chevron-right"></i></a>\n' +
         '</div>';
       jQuery(curObj).after(pagination);
       jQuery(curObj).attr('data-cur-page','1');

@@ -4,735 +4,382 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>G15 - MBA</title>
+    <title>G15 - Đặt may</title>
     <link rel="shortcut icon" href="images/logo/logo1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/Logo_Ananas_Header.svg" type="image/x-icon">
     <!-- THEME -->
-    <script src="libs/jquery/jquery-3.5.1.slim.js"></script>
-    <link rel="stylesheet" href="libs/bootstrap-4.5.0-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="libs/Glider.js-master/glider.css">
-    <link rel="stylesheet" href="libs/fontawesome-free-5.13.0-web/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="themes/css/main.css">
     <link rel="stylesheet" href="themes/css/style_section.css">
-    <link rel="stylesheet" href="themes/css1/menu.css">
-    <link rel="stylesheet" href="themes/css1/footer.css">
-
-    <link rel="stylesheet" href="themes/css1/dat-may.css">
 </head>
 
 <body>
-    <!-- header -->
-    <header>
-        <div class="container-fluid ">
-            <div id="top-head">
-                <div class="container">
-                    <div class="d-flex">
-
-
-                        <div class="col-md-12 col-sm-12">
-
-                            <ul class="d-flex">
-                                <!-- Tìm kiếm -->
-                                <div class="col-md-5">
-                                    <form id="searchBox">
-                                        <div class="form-group d-flex">
-                                            <input type="text" name="searchInput" id="searchInput" class="form-control"
-                                                placeholder="Bạn cần tìm..." aria-describedby="helpId" />
-                                            <a href="tim-kiem.html" class="btn" id="searchBtn">
-                                                <i class="fas fa-search"></i>
-                                            </a>
-                                        </div>
-                                    </form>
-                                </div>
-                                <!-- kết thúc tìm kiếm -->
-
-
-
-                                <!-- <li>
-                  <img src="images/icon_tra_cuu_don_hang.png" alt="" />
-                  <a href="#" data-toggle="modal" data-target="#funct_login">Tra cứu đơn hàng</a>
-                </li> -->
-
-
-                                <li>
-                                    <img src="images/icon_tra_cuu_don_hang.png" alt="" />
-                                    <a href="tra_cuu_don_hang.html">Tra cứu đơn hàng</a>
-                                </li>
-                                <!-- <li>
-                  <img src="images/icon_tim_cua_hang.png" alt="" />
-                  <a href="tim-cua-hang.html">Tìm cửa hàng</a>
-                </li> -->
-                                <li>
-                                    <img src="images/icon_heart_header.png" alt="" />
-                                    <a href="yeu-thich.html">Yêu thích</a>
-                                </li>
-                                <li>
-                                    <img src="images/icon_gio_hang.png" alt="" />
-                                    <a href="gio-hang.html">Giỏ hàng (<span>1</span>)</a>
-                                </li>
-
-
-                                <li>
-                                    <img src="images/icon_dang_nhap.png" alt="" />
-                                    <a href="#" data-toggle="modal" data-target="#funct_login">
-                                        <span id="get_name_user">Đăng nhập</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <img src="images/icon_dang_nhap.png" alt="" />
-                                    <a href="dang-ky.html">
-                                        <span id="get_name_user">Đăng ký</span>
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- menu -->
-            <div id="sidebar" class="bg-light">
-                <div class="container">
-                    <div class="d-flex">
-                        <div class="col-md-2 d-flex justify-content-center">
-                            <a href="index.html">
-                                <img src="images/logo/logo1.png" alt="" class="logo" />
-                            </a>
-                        </div>
-                        <div class="col-md-10">
-                            <ul class="menu d-flex">
-
-                                <li class="menu-item">
-                                    <a href="san-pham.html" class="d-flex">
-                                        <h4>SẢN PHẨM</h4>
-                                        <i class="fas fa-chevron-down"></i>
-                                    </a>
-
-                                    <div class="menu-sub menu-sub--product">
-                                        <div class="container container--w">
-                                            <div class="d-flex my-3">
-                                                <div class="col-md-12 col-sm-12">
-                                                    <div class="box box">
-
-                                                        <div class="box__group">
-                                                            <ul>
-                                                                <li><a href="vayDaHoi.html">Váy dạ hội</a></li>
-                                                                <li><a href="damVay.html">Đầm, váy</a></li>
-                                                                <li><a href="aoDai.html">Áo dài</a></li>
-                                                                <li><a href="vest.html">Vest</a></li>
-                                                                <li><a href="chanVay.html">Chân váy</a></li>
-                                                                <li><a href="quan.html">Quần</a></li>
-                                                                <li><a href="setDo.html">Set đồ</a></li>
-                                                                <li><a href="aoKhoac.html">Áo khoác</a></li>
-                                                            </ul>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="sale-off.html" class="d-flex">
-                                        <h4>KHUYẾN MÃI</h4>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="sale-off.html" class="d-flex">
-                                        <h4>GIỚI THIỆU</h4>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="sale-off.html" class="d-flex">
-                                        <h4>LIÊN HỆ</h4>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <img src="images/icon_dang_nhap.png" alt="" />
-                                </li>
-
-
-
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- end menu -->
-
-
+  <!-- header -->
+  <header id="header">
+    <div class="container">
+      <div class="d-flex  align-items-center">
+        <div class="col col-md-2">
+          <a href="index.html">
+            <img src="images/logo-new.jpg" alt="" width="150"  id="logo"/>
+          </a>
         </div>
-    </header>
-
-    <!-- main -->
-    <main id="home_page">
-        <div class="main_home_page">
-
-
-
-            <section id="section_banner">
-                <div id="ruleCarousel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                        <a class="carousel-item active">
-                            free shipping hoá đơn từ 800k!
-                        </a>
-                        <a class="carousel-item">
-                            hàng 2 tuần nhận đổi - giày nữa năm bảo hành
-                        </a>
-                        <a class="carousel-item">
-                            buy more pay less - áp dụng khi mua phụ kiện
-                        </a>
-                    </div>
-                    <a class="carousel-control-prev" href="#ruleCarousel" role="button" data-slide="prev">
-                        <!-- carousel-control-prev-icon -->
-                        <span class="fas fa-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
+        <div class="col col-md-10">
+          <div id="top-head">
+            <div class="d-flex">
+              <div class="col col-md-2 col-sm-12"></div>
+              <div class="col col-md-5 col-sm-12">
+                <form id="searchBox">
+                  <div class="form-group d-flex">
+                    <input
+                      type="text"
+                      name="searchInput"
+                      id="searchInput"
+                      class="form-control"
+                      placeholder="Bạn cần tìm..."
+                      aria-describedby="helpId"
+                    />
+                    <button type="submit" class="btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <ul class="d-flex">
+                  <li>
+                    <a href="dang-nhap.html">
+                      <span id="get_name_user">Đăng nhập</span>
                     </a>
-                    <a class="carousel-control-next" href="#ruleCarousel" role="button" data-slide="next">
-                        <span class="fas fa-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </section>
-
-
-
-
-
-            <!-- Noi dung -->
-
-            <main id="detail_page">
-                <section id="detail_prod_content" class="border_bottom--dashed">
-                    <div class="container">
-
-                        <section id="content_prod" class="d-flex">
-                            <article id="picts_prod" class="col-md-3 pr-5 py-3">
-                                <div class="exzoom" id="exzoom">
-                                    <div class="exzoom_img_box">
-                                        <ul class='exzoom_img_ul'>
-                                            <li>
-                                                <img src="images/product/da-hoi/dahoi(5).jpg" />
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                    <div class="exzoom_nav"></div>
-                                </div>
-
-                            </article>
-                            <article id="infor_prod" class="col-md-9 py-3">
-
-                                <main id="checkout_page">
-                                    <div class="container">
-                                        <div class="d-flex">
-
-                                            <!-- <div class="row g-5"> -->
-                                            <!-- <div class="col-md-8 col-lg-8"> -->
-
-                                            <form class="needs-validation" novalidate>
-                                                <!-- Thoong tin khachs hang -->
-                                                <div class="col-md-8-left">
-                                                    <h4 class="mb-3">Thông tin khách hàng</h4>
-
-                                                    <div class="row g-3">
-                                                        <div class="col-sm-6">
-                                                            <label for="lastName" class="form-label">Họ</label>
-                                                            <input type="text" class="form-control" id="lastName"
-                                                                placeholder="" value="" required>
-                                                            <div class="invalid-feedback">
-                                                                Họ hợp lệ là bắt buộc.
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-sm-6">
-                                                            <label for="firstName" class="form-label">Tên</label>
-                                                            <input type="text" class="form-control" id="firstName"
-                                                                placeholder="" value="" required>
-                                                            <div class="invalid-feedback">
-                                                                Tên hợp lệ là bắt buộc.
-                                                            </div>
-                                                        </div>
-
-
-
-                                                        <div class="col-12">
-                                                            <label for="username" class="form-label">Tên tài
-                                                                khoản</label>
-                                                            <div class="input-group has-validation">
-                                                                <span class="input-group-text">@</span>
-                                                                <input type="text" class="form-control" id="username"
-                                                                    placeholder="Username" required>
-                                                                <div class="invalid-feedback">
-                                                                    Tên người dùng của bạn là bắt buộc.
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-12">
-                                                            <label for="email" class="form-label">Email <span
-                                                                    class="text-muted">(Tùy chọn)</span></label>
-                                                            <input type="email" class="form-control" id="email"
-                                                                placeholder="you@example.com">
-                                                            <div class="invalid-feedback">
-                                                                Vui lòng nhập một địa chỉ email hợp lệ để cập nhật thông
-                                                                tin vận chuyển.
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-12">
-                                                            <label for="phone" class="form-label">Số điện thoại </label>
-                                                            <input type="phone" class="form-control" id="phone"
-                                                                placeholder="0123456789">
-                                                            <div class="invalid-feedback">
-                                                                Vui lòng nhập số điện thoại hợp lệ để cập nhật thông tin
-                                                                vận chuyển.
-                                                            </div>
-                                                        </div>
-
-
-
-                                                        <div class="col-12">
-                                                            <label for="address" class="form-label">Địa chỉ giao
-                                                                hàng</label>
-                                                            <input type="text" class="form-control" id="address"
-                                                                placeholder="Quận Bình Thạnh" required>
-                                                            <div class="invalid-feedback">
-                                                                Vui lòng nhập địa chỉ vận chuyển của bạn.
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-12">
-                                                            <label for="address2" class="form-label">Địa chỉ giao hàng
-                                                                khác <span class="text-muted">(Tùy
-                                                                    chọn)</span></label>
-                                                            <input type="text" class="form-control" id="address2"
-                                                                placeholder="Quận Bình Thạnh ">
-
-                                                        </div>
-
-                                                        <div class="col-md-4">
-                                                            <label for="country" class="form-label">Tỉnh/ Thành
-                                                                phố</label>
-
-
-                                                            <select class="form-control" id="customerCity"
-                                                                name="customerCity">
-                                                                <option value="0">Tỉnh/ Thành Phố</option>
-                                                                <option value="5646">An Giang</option>
-                                                                <option value="5986">Bà Rịa – Vũng Tàu</option>
-                                                                <option value="5768">Bắc Giang</option>
-                                                                <option value="6189">Bắc Kạn</option>
-                                                                <option value="6394">Bạc Liêu</option>
-                                                                <option value="6224">Bắc Ninh</option>
-                                                                <option value="6034">Bến Tre</option>
-                                                                <option value="5779">Bình Định</option>
-                                                                <option value="5943">Bình Dương</option>
-                                                                <option value="5791">Bình Phước</option>
-                                                                <option value="5803">Bình Thuận</option>
-                                                                <option value="5814">Cà Mau</option>
-                                                                <option value="6089">Cần Thơ</option>
-                                                                <option value="6198">Cao Bằng</option>
-                                                                <option value="6012">Đà Nẵng</option>
-                                                                <option value="5824">Đắk Lắk</option>
-                                                                <option value="5840">Đắk Nông</option>
-                                                                <option value="6341">Điện Biên</option>
-                                                                <option value="5931">Đồng Nai</option>
-                                                                <option value="6063">Đồng Tháp</option>
-                                                                <option value="5849">Gia Lai</option>
-                                                                <option value="6298">Hà Giang</option>
-                                                                <option value="5867">Hà Nam</option>
-                                                                <option value="5953">Hà Nội</option>
-                                                                <option value="5874">Hà Tĩnh</option>
-                                                                <option value="5888">Hải Dương</option>
-                                                                <option value="6119">Hải Phòng</option>
-                                                                <option value="5901">Hậu Giang</option>
-                                                                <option value="5618">Hồ Chí Minh</option>
-                                                                <option value="6243">Hòa Bình</option>
-                                                                <option value="5910">Hưng Yên</option>
-                                                                <option value="5921">Khánh Hòa</option>
-                                                                <option value="5658">Kiên Giang</option>
-                                                                <option value="6365">Kon Tum</option>
-                                                                <option value="6332">Lai Châu</option>
-                                                                <option value="5674">Lâm Đồng</option>
-                                                                <option value="6212">Lạng Sơn</option>
-                                                                <option value="6384">Lào Cai</option>
-                                                                <option value="5996">Long An</option>
-                                                                <option value="5687">Nam Định</option>
-                                                                <option value="5698">Nghệ An</option>
-                                                                <option value="6270">Ninh Bình</option>
-                                                                <option value="6376">Ninh Thuận</option>
-                                                                <option value="6318">Phú Thọ</option>
-                                                                <option value="5720">Phú Yên</option>
-                                                                <option value="6135">Quảng Bình</option>
-                                                                <option value="6170">Quảng Nam</option>
-                                                                <option value="6155">Quảng Ngãi</option>
-                                                                <option value="6255">Quảng Ninh</option>
-                                                                <option value="6144">Quảng Trị</option>
-                                                                <option value="6077">Sóc Trăng</option>
-                                                                <option value="6352">Sơn La</option>
-                                                                <option value="5730">Tây Ninh</option>
-                                                                <option value="6279">Thái Bình</option>
-                                                                <option value="6288">Thái Nguyên</option>
-                                                                <option value="5740">Thanh Hóa</option>
-                                                                <option value="6109">Thừa Thiên – Huế</option>
-                                                                <option value="6022">Tiền Giang</option>
-                                                                <option value="6044">Trà Vinh</option>
-                                                                <option value="6310">Tuyên Quang</option>
-                                                                <option value="6054">Vĩnh Long</option>
-                                                                <option value="6099">Vĩnh Phúc</option>
-                                                                <option value="6233">Yên Bái</option>
-                                                            </select>
-                                                            <div class="invalid-feedback">
-                                                                Vui lòng chọn một Tỉnh/ Thành phố hợp lệ.
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-md-4">
-                                                            <label for="state" class="form-label">Quận/ Huyện</label>
-
-                                                            <select class="form-control" id="customerDistrict"
-                                                                name="customerDistrict">
-                                                                <option value="0">Quận/ Huyện</option>
-                                                                <option value="1">Quận1</option>
-                                                                <option value="2">Quận2</option>
-                                                                <option value="3">Quận3</option>
-                                                                <option value="4">Quận4</option>
-                                                                <option value="5">Quận5</option>
-                                                                <option value="6">Quận6</option>
-                                                                <option value="7">Quận7</option>
-                                                                <option value="8">Quận8</option>
-                                                                <option value="9">Quận9</option>
-                                                                <option value="10">Quận10</option>
-                                                            </select>
-                                                            <div class="invalid-feedback">
-                                                                Vui lòng chọn một Quận/ Huyện hợp lệ.
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-md-4">
-                                                            <label for="country" class="form-label">Phường/ Xã </label>
-
-                                                            <select class="form-control" id="customerWard"
-                                                                name="customerWard">
-                                                                <option value="0">Phường/ Xã</option>
-                                                            </select>
-                                                            <div class="invalid-feedback">
-                                                                Vui lòng chọn một Phường/ Xã hợp lệ.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Thông tin đặt may -->
-
-                                                <div class="col-md-8-right">
-                                                    <h4 class="mb-3">Thông tin đặt may</h4>
-                                                    <div class="row g-3">
-
-
-                                                        <div class="col-12">
-                                                            <label for="height" class="form-label">Chiều cao</label>
-                                                            <input type="text" class="form-control" id="height"
-                                                                placeholder="160">
-                                                            <div class="invalid-feedback">
-                                                                Vui lòng nhập số chiều cao đúng nhât.
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <label for="weight" class="form-label">Cân nặng</label>
-                                                            <input type="text" class="form-control" id="weight"
-                                                                placeholder="45">
-                                                            <div class="invalid-feedback">
-                                                                Vui lòng nhập số cân nặng đúng nhât.
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-12">
-                                                            <label for="round1" class="form-label">Số đo vòng 1</label>
-                                                            <input type="text" class="form-control" id="round1"
-                                                                placeholder="90">
-                                                            <div class="invalid-feedback">
-                                                                Vui lòng nhập số vòng 1 đúng nhât.
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <label for="round2" class="form-label">Số đo vòng 2</label>
-                                                            <input type="text" class="form-control" id="round2"
-                                                                placeholder="60">
-                                                            <div class="invalid-feedback">
-                                                                Vui lòng nhập số vòng 2 đúng nhât.
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <label for="round3" class="form-label">Số đo vòng 3</label>
-                                                            <input type="text" class="form-control" id="round3"
-                                                                placeholder="90">
-                                                            <div class="invalid-feedback">
-                                                                Vui lòng nhập số vòng 3 đúng nhât.
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-12">
-                                                            <label for="note" class="form-label">Ghi chú</label>
-                                                            <input type="text" class="form-control" class="form-control-note" id="note"
-                                                                placeholder="Ghi chú">
-                                                            <div class="invalid-feedback">
-                                                                Vui lòng nhập thông tin khách hàng muốn về sản phẩm.
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-
-
-
-
-
-                                                <hr class="my-4">
-                                             
-
-                                                <!-- <button class="w-100 btn btn-primary btn-lg" type="submit">
-                                                        <a href="khach-hang.html" class="btn w-100"
-                                                            id="finish_order_btn">
-                                                           Gửi
-                                                        </a>
-                                                    </button> -->
-                                                    <button class="w-100 btn btn-primary btn-lg" type="submit">Gửi</button>
-
-<!-- 
-                                                <input type="submit" class="w-100 btn btn-primary btn-lg"
-                                                    onclick="alert('Thông tin khách hàng đã được gửi đi')" value="Gửi"> -->
-
-
-                                                    </form>
-                                                <!-- </div> -->
-
-
-
-                                        </div>
-
-
-
-
-
-                                    </div>
-
-                                </main>
-
-
-                            </article>
-                        </section>
-                    </div>
-                </section>
-
-            </main>
-
-            <!-- kết thúc nội dung -->
-
-
-        </div>
-    </main>
-
-
-
-
-
-    <!-- modal login -->
-    <div class="modal fade" id="funct_login" tabindex="-1" role="dialog" aria-labelledby="funct_login"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="d-flex w-100">
-                        <div class="col-md-12">
-                            <img src="images/logo/logo1.png" alt="logo" id="funct_login--logo" class="login--logo">
-                            <h3 class="modal-title" id="funct_login--title">
-                                CHÀO MỪNG ĐẾN VỚI MBA
-                            </h3>
-                        </div>
-                        <div class="inner" id="btn_close">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <form id="frm_login">
-                        <div class="form-group">
-                            <input type="email" name="ip_email" id="ip_email" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" name="ip_pass" id="ip_pass" placeholder="Mật khẩu">
-                        </div>
-                        <a href="#" id="forget_pass">Quên mật khẩu?</a>
-                        <div class="form-group">
-                            <button><a href="#">Đăng nhập</a></button>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <p>Chưa có tài khoản tại Ananas? <a href="dang-ky.html">Đăng ký</a></p>
-                </div>
+                  </li>
+                  <li>
+                    <a href="dang-ky.html">Đăng ký</a>
+                  </li>
+                  <li>
+                    <a href="tra-cuu-don-hang.html">Tra cứu đơn hàng</a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
+          <div id="sidebar">
+            <div class="container">
+              <div class="d-flex">
+                <div class="col-md-12">
+                  <ul class="menu d-flex">
+                    <li class="menu-item">
+                      <a href="ve-chung-toi.html" class="d-flex">
+                        <h4>GIỚI THIỆU</h4>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="san-pham.html" class="d-flex">
+                        <h4>SẢN PHẨM</h4>
+                        <i class="fas fa-chevron-down"></i>
+                        <div class="menu-sub">
+                          <a href="" class="menu-link d-flex">
+                            <img src="images/ao-dai.png" alt="" height="40">
+                            <h5>ÁO DÀI</h5>
+                          </a>
+                          <a href="" class="menu-link d-flex">
+                            <img src="images/dress-icon.png" alt="" height="40">
+                            <h5>ĐẦM, VÁY</h5>
+                          </a>
+                          <a href="" class="menu-link d-flex">
+                            <img src="images/coat.png" alt="" height="40">
+                            <h5>VEST</h5>
+                          </a>
+                          <a href="" class="menu-link d-flex">
+                            <img src="images/pencil-skirt.png" alt="" height="40">
+                            <h5>CHÂN VÁY</h5>
+                          </a>
+                          <a href="" class="menu-link d-flex">
+                            <img src="images/pegged-pants.png" alt="" height="40">
+                            <h5>QUẦN</h5>
+                          </a>
+                          <a href="" class="menu-link d-flex">
+                            <img src="images/clothes.png" alt="" height="40">
+                            <h5>SET ĐỒ</h5>
+                          </a>
+                          <a href="" class="menu-link d-flex">
+                            <img src="images/leather-jacket.png" alt="" height="40">
+                            <h5>ÁO KHOÁC</h5>
+                          </a>
+                        </div>
+                      </a>
+                    </li>
+                    
+                    <li class="menu-item">
+                      <a href="sale-off.html" class="d-flex">
+                        <h4>KHUYẾN MÃI</h4>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="lien-he.html" class="d-flex">
+                        <h4>LIÊN HỆ</h4>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="discover-you.html" class="d-flex">
+                        <h4>TIN TỨC</h4>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="gio-hang.html" class="d-flex">
+                        <img src="images/cart-icon.png" alt="" width="24">
+                        (<span>1</span>)</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-
-
-    <!-- footer -->
-    <footer>
-        <div class="container">
-            <div class="d-flex">
-                <div class="col-md-3">
-                    <div class="store d-flex ">
-                        <img src="images/logo/logo2.png" class="img-footer" alt="">
-                        <a href="lienhe.html" class="storeBtn btn">TÌM CỬA HÀNG</a>
-                    </div>
-                </div>
-                <div class="col-md-9">
-                    <div class="content-foot">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <ul class="menu-bot">
-                                    <li class="head">
-                                        SẢN PHẨM
-                                    </li>
-
-
-                                    <li><a href="damVay.html">Đầm, váy</a></li>
-                                    <li><a href="aoDai.html">Áo dài</a></li>
-                                    <li><a href="vest.html">Vest</a></li>
-                                    <li><a href="chanVay.html">Chân váy</a></li>
-                                    <li><a href="quan.html">Quần</a></li>
-                                    <li><a href="setDo.html">Set đồ</a></li>
-                                    <li><a href="aoKhoac.html">Áo khoác</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3">
-                                <ul class="menu-bot">
-                                    <li class="head">
-                                        VỀ CÔNG TY
-                                    </li>
-                                    <li><a href="tuyen-dung.html">Tuyển dụng</a></li>
-                                    <li><a href="lien-he.html">Liên hệ</a></li>
-                                    <li><a href="#">Về MBA</a></li>
-
-                                    <li class="head">
-                                        THÀNH VIÊN
-                                    </li>
-                                    <li>Nguyễn Thị Trúc Mai</li>
-                                    <li>Châu Quế Bình</li>
-                                    <li>Trần Thu An</li>
-
-
-                                </ul>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="menu-bot">
-                                    <div class="head">
-                                        MBA SOCIAL
-                                    </div>
-                                    <div class="d-flex ">
-                                        <a href="#" class="socialIcon">
-                                            <img src="images/icon_social1.png" alt="">
-                                        </a>
-                                        <a href="#" class="socialIcon">
-                                            <img src="images/icon_social2.png" alt="">
-                                        </a>
-                                        <a href="#" class="socialIcon">
-                                            <img src="images/icon_social3.png" alt="">
-                                        </a>
-
-                                    </div>
-
-
-
+</header>
+  <section id="section_banner">
+    <div class="container-lg">
+        <div id="hotServiceCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+                <p class="carousel-item" data-bs-interval="3000">
+                    <strong>NHẬN ĐẶT MAY TRANG PHỤC THEO SỐ ĐO CỦA BẠN</strong>
+                </p>
+                <p class="carousel-item active" data-bs-interval="3000">
+                    <strong>TẶNG PHIẾU MUA HÀNG TRỊ GIÁ ĐẾN 10 TRIỆU !!!</strong>
+                </p>
+                <p class="carousel-item">
+                    <strong>NHẬN ĐỔI MỚI 100% NẾU SẢN PHẨM LỖI TỪ CỦA HÀNG</strong>
+                </p>
+              
+            </div>
+        </div>  
+    </div>
+  </section>
+  <main id="main">
+    <div class="container-lg">
+        <div class="row  justify-content-center">
+            <strong class="col col-lg-6 text-center mb-3">
+                <em>***Gửi đến các nàng thân yêu! Để nhận được sản phẩm vừa với cơ thể, shop mong bạn hãy dành chút thời gian để đo đạt cơ thể và <u>nhập chính xác các thông số cơ thể</u>. ***</em>
+            </strong>
+        </div>
+        <section id="content_prod" class="d-flex">
+            
+            <article class="col col-lg-3 me-5">
+                <img src="images/products/ao-dai/aodai(10).jpg" width="100%"/>
+            </article>
+            <article class="col col-lg-9">
+                <form class="needs-validation" novalidate>
+                    <div class="row">
+                        <!-- Thoong tin khachs hang -->
+                    <div class="col col-lg-6">
+                        <h2 class="mb-3">Thông tin khách hàng</h2>
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label for="lastName" class="form-label">Họ</label>
+                                <input type="text" class="form-control" id="lastName"
+                                    placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Họ hợp lệ là bắt buộc.
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <ul class="menu-bot">
 
-
-                                    <div class="col-sm-6 col-lg-3 p-b-50">
-                                        <div class="head">
-                                            Đăng ký nhận email
-                                        </div>
-
-                                        <form>
-                                            <div class="wrap-input1 w-full p-b-4">
-                                                <input class="input1 bg-none plh1 stext-107 cl7" type="text"
-                                                    name="email" placeholder="email@example.com">
-                                                <div class="focus-input1 trans-04"></div>
-                                            </div>
-
-                                            <div class="p-t-18">
-                                                <button
-                                                    class="flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04">
-                                                    Gửi
-                                                </button>
-                                            </div>
-                                        </form>
+                            <div class="col-sm-6">
+                                <label for="firstName" class="form-label">Tên</label>
+                                <input type="text" class="form-control" id="firstName"
+                                    placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Tên hợp lệ là bắt buộc.
+                                </div>
+                            </div>
+                            <!-- <div class="col-12">
+                                <label for="username" class="form-label">Tên tài
+                                    khoản</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text">@</span>
+                                    <input type="text" class="form-control" id="username"
+                                        placeholder="Username" required>
+                                    <div class="invalid-feedback">
+                                        Tên người dùng của bạn là bắt buộc.
                                     </div>
+                                </div>
+                            </div> -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-                                </ul>
+                            <div class="col-12">
+                                <label for="email" class="form-label">Email xác nhận</label>
+                                <input type="email" class="form-control" id="email"
+                                    placeholder="you@example.com">
+                                <div class="invalid-feedback">
+                                    Vui lòng nhập một địa chỉ email hợp lệ để cập nhật thông
+                                    tin vận chuyển.
+                                </div>
                             </div>
 
-
-
-                        </div>
-                        <div class="row">
-
-                            <div class="col-md-12">
-                                <p>
-                                    Copy
-                                    <i class="fa fa-copyright" aria-hidden="true"></i>
-                                    2020 MBA. All rights reserved
-                                </p>
-
+                            <div class="col-12">
+                                <label for="phone" class="form-label">Số điện thoại </label>
+                                <input type="phone" class="form-control" id="phone"
+                                    placeholder="0123456789">
+                                <div class="invalid-feedback">
+                                    Vui lòng nhập số điện thoại hợp lệ để cập nhật thông tin
+                                    vận chuyển.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="validateAddress" class="form-label">Địa chỉ giao hàng</label>
+                                <textarea class="form-control" id="validateAddress" placeholder="Nhập địa chỉ giao hàng đến" required></textarea>
+                                <div class="invalid-feedback">
+                                    Địa chỉ giao hàng không được bỏ trống
+                                </div>
                             </div>
                         </div>
-
-
-
-
                     </div>
+                    <!-- Thông tin đặt may -->
+                    <div class="col col-lg-6">
+                        <h2 class="mb-3">Thông tin đặt may</h2>
+                        <div class="row g-3">
+                            <div class="col-lg-12">
+                                <label for="height" class="form-label">Chiều cao (cm)</label>
+                                <input type="number" class="form-control" id="height"
+                                    placeholder="Ví dụ: 160" required>
+                                <div class="invalid-feedback">
+                                    Vui lòng nhập chiều cao được đo gần đây nhất
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <label for="weight" class="form-label">Cân nặng (kg)</label>
+                                <input type="number" class="form-control" id="weight"
+                                    placeholder="Ví dụ: 45" required>
+                                <div class="invalid-feedback">
+                                    Vui lòng nhập số cân nặng gần đây nhất
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <label for="round1" class="form-label">Số đo vòng 1</label>
+                                <input type="number" class="form-control" id="round1"
+                                    placeholder="Ví dụ: 90" required>
+                                <div class="invalid-feedback">
+                                    Vui lòng nhập số
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <label for="round2" class="form-label">Số đo vòng 2</label>
+                                <input type="number" class="form-control" id="round2"
+                                    placeholder="Ví dụ: 60" required>
+                                <div class="invalid-feedback">
+                                    Vui lòng nhập số
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <label for="round3" class="form-label">Số đo vòng 3</label>
+                                <input type="number" class="form-control" id="round3"
+                                    placeholder="Ví dụ: 90" required>
+                                <div class="invalid-feedback">
+                                    Vui lòng nhập số
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="validationNote" class="form-label">Ghi chú</label>
+                                <textarea class="form-control" id="validationNote" placeholder="Nhập nội dung bạn mong muốn ở sản phẩm"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-12">
+                        <hr class="my-4">
+                        <button class="w-100 btn btn-dark btn-lg" type="submit">Đặt may</button>
+                    </div>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="container-lg">
+            <div class="row py-5">
+                <div class="col col-lg-2">
+                    <div class="py-5 text-center">
+                        <a href="index.html">
+                            <img src="images/2.png" class="img-footer" alt="" width="150">
+                        </a>
+                        <div class="d-flex justify-content-center mt-3">
+
+                            <a href="" class="btn">
+                                <img src="images/icon_facebook.png" alt="">
+                            </a>
+                            <a href="" class="btn">
+                                <img src="images/icon_instagram.png" alt="">
+                            </a>
+                            <a href="" class="btn">
+                                <img src="images/icon_youtube.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3">
+                    <h4>SẢN PHẨM</h4>
+                    <ul class="menu-bot">
+                        <li><a href="damVay.html">Đầm, váy</a></li>
+                        <li><a href="aoDai.html">Áo dài</a></li>
+                        <li><a href="vest.html">Vest</a></li>
+                        <li><a href="chanVay.html">Chân váy</a></li>
+                        <li><a href="quan.html">Quần</a></li>
+                        <li><a href="setDo.html">Set đồ</a></li>
+                        <li><a href="aoKhoac.html">Áo khoác</a></li>
+                    </ul>
+                </div>
+                <div class="col col-lg-3">
+                    <h4> VỀ CÔNG TY</h4>
+                    <ul class="menu-bot">
+                        <li><a href="tuyen-dung.html">Tuyển dụng</a></li>
+                        <li><a href="lien-he.html">Liên hệ</a></li>
+                        <li><a href="#">Về MBA</a></li>
+                    </ul>
+                    <hr>
+                    <h4>THÀNH VIÊN</h4>
+                    <ul class="menu-bot">
+                        <li>Nguyễn Thị Trúc Mai</li>
+                        <li>Châu Quế Bình</li>
+                        <li>Trần Thu An</li>
+                    </ul>
+                </div>
+                <div class="col col-lg-4">
+                    <h4 class="ps-0">ĐĂNG KÝ ĐỂ NHẬN THÔNG BÁO</h4>
+                    <form>
+                        <div class="form-group mb-3">
+                            <input class="form-control" type="email"
+                                name="email" placeholder="email@example.com">
+                        </div>
+                        <button
+                            class="btn btn-primary">Gửi
+                        </button>
+                    </form>
+                </div>
+                <div class="col col-lg-12">
+                    <p class="text-center">
+                        Copy
+                        <i class="fa fa-copyright" aria-hidden="true"></i>
+                        2022 MBA. All rights reserved
+                    </p>
                 </div>
             </div>
         </div>
     </footer>
 
-
-
-
-
     <!-- Back to top -->
-    <a href="#home_page" type="button" id="to_top_btn" class="btn" data-toggle="tooltip" data-placement="top"
+    <a href="#section_banner" type="button" id="to_top_btn" class="btn" data-toggle="tooltip" data-placement="top"
         title="Back to Top">
         <i class="fas fa-chevron-up"></i>
     </a>
 
     <!-- JS -->
     <script src="themes/js/form-validation.js"></script>
-    <script src="libs/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
-    <script src="libs/Glider.js-master/glider.js"></script>
-    <script src="themes/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

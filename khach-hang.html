@@ -3,313 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thông tin khách hàng | Ananas</title>
-    <link
-    rel="shortcut icon"
-    href="images/Logo_Ananas_Header.svg"
-    type="image/x-icon"
-  />
+    <title>G15 | Khách hàng</title>
+    <link rel="shortcut icon" href="images/logo-new.jpg" type="image/x-icon">
   <!-- THEME -->
-  <link
-    rel="stylesheet"
-    href="libs/bootstrap-4.5.0-dist/css/bootstrap.min.css"
-  />
-  <link
-    rel="stylesheet"
-    href="libs/fontawesome-free-5.13.0-web/css/all.css"
-  />
-  <link rel="stylesheet" href="themes/css/main.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="libs/glider.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="themes/css/main.css">
   <link rel="stylesheet" href="themes/css/style_section.css">
-  <!-- JS -->
-  <script src="libs/jquery/jquery-3.5.1.slim.js"></script>
-  <script src="libs/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
-  <script src="themes/js/main.js"></script>
 </head>
 <body>
-  <!-- header -->
-  <header>
-    <div class="container-fluid">
-      <div id="top-head">
-        <div class="container">
-          <div class="d-flex">
-            <div class="col-md-4 col-sm-0"></div>
-            <div class="col-md-8 col-sm-12">
-              <ul class="d-flex">
-                <li>
-                  <img src="images/icon_dang_nhap.png" alt="" />
-                  <a href="#" data-toggle="modal" data-target="#funct_login">
-                    <!-- <span id="get_name_user">Đăng nhập</span> -->
-                    <span id="get_name_user">An091099</span>
-                  </a>
-                </li>
-                <li>
-                  <img src="images/icon_tra_cuu_don_hang.png" alt="" />
-                  <a href="#" data-toggle="modal" data-target="#funct_login">Tra cứu đơn hàng</a>
-                </li>
-                <li>
-                  <img src="images/icon_tim_cua_hang.png" alt="" />
-                  <a href="tim-cua-hang.html">Tìm cửa hàng</a>
-                </li>
-                <li>
-                  <img src="images/icon_heart_header.png" alt="" />
-                  <a href="yeu-thich.html">Yêu thích</a>
-                </li>
-                <li>
-                  <img src="images/icon_gio_hang.png" alt="" />
-                  <a href="gio-hang.html">Giỏ hàng (<span>1</span>)</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+<!-- header -->
+<header id="header">
+  <div class="container">
+    <div class="d-flex  align-items-center">
+      <div class="col col-md-2">
+        <a href="index.html">
+          <img src="images/logo-new.jpg" alt="" width="150"  id="logo"/>
+        </a>
       </div>
-      <div id="sidebar" class="bg-light">
-        <div class="container">
+      <div class="col col-md-10">
+        <div id="top-head">
           <div class="d-flex">
-            <div class="col-md-2 d-flex justify-content-center">
-              <a href="index.html">
-                <img src="images/Logo_Ananas_Header.png" alt="" />
-              </a>
-            </div>
-            <div class="col-md-7">
-              <ul class="menu d-flex">
-                <li class="menu-item">
-                  <a href="san-pham.html" class="d-flex">
-                    <h4>SẢN PHẨM</h4>
-                    <i class="fas fa-chevron-down"></i>
-                  </a>
-                  <div class="menu-sub menu-sub--product">
-                    <div class="container">
-                      <ul class="d-flex">
-                        <li>
-                          <a href="san-pham.html">
-                            <div class="card">
-                              <img
-                                src="images/Menu_Nam.jpg"
-                                alt=""
-                                class="card__image"
-                              />
-                              <div class="card__content">CHO NAM</div>
-                            </div>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="san-pham.html">
-                            <div class="card">
-                              <img
-                                src="images/Menu_Nu.jpg"
-                                alt=""
-                                class="card__image"
-                              />
-                              <div class="card__content">CHO NỮ</div>
-                            </div>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="san-pham.html">
-                            <div class="card">
-                              <img
-                                src="images/Menu_Sale-off.jpg"
-                                alt=""
-                                class="card__image"
-                              />
-                              <div class="card__content">OUTLET SALE</div>
-                            </div>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="san-pham.html">
-                            <div class="card">
-                              <img
-                                src="images/Menu_Phu-kien.jpg"
-                                alt=""
-                                class="card__image"
-                              />
-                              <div class="card__content">
-                                THỜI TRANG & PHỤ KIỆN
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="menu-item">
-                  <a href="san-pham.html" class="d-flex">
-                    <h4>NAM</h4>
-                    <i class="fas fa-chevron-down"></i>
-                  </a>
-                  <div class="menu-sub menu-sub--male">
-                    <div class="container container--w">
-                      <div class="d-flex my-3">
-                        <div class="col-md-4 col-sm-12">
-                          <div class="box box--devide">
-                            <h3>
-                              <a href="#">NỔI BẬT</a>
-                            </h3>
-                            <div class="box__group">
-                              <ul>
-                                <li><a href="">Best Seller</a></li>
-                                <li><a href="">New Arrival</a></li>
-                                <li><a href="">Sale off</a></li>
-                              </ul>
-                              <div>
-                                <div href="#" class="line_head">Tất cả giày</div>
-                                <a href="">Pineapple x Lucky Luke</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-8 col-sm-12 ml-5">
-                          <div class="d-flex">
-                            <div class="col-md-6">
-                              <div class="box">
-                               <h3>
-                                 <a href="#">GIÀY</a>
-                               </h3>
-                                <div class="box__group">
-                                  <ul>
-                                    <li class="line_head">Dòng sản phẩm</li>
-                                    <li><a href="">Basas</a></li>
-                                    <li><a href="">Vintas</a></li>
-                                    <li><a href="">Urbas</a></li>
-                                    <li><a href="">Pattas</a></li>
-                                    <li><a href="">Track 6</a></li>
-                                  </ul>
-                                  <ul>
-                                    <li class="line_head">Style</li>
-                                    <li><a href="">High Top</a></li>
-                                    <li><a href="">Low Top</a></li>
-                                    <li><a href="">Slip-on</a></li>
-                                  </ul>
-                                  <a href="#" class="line_head">Tất cả giày</a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="box">
-                                <h3>
-                                  <a href="#">THỜI TRANG & PHỤ KIỆN</a>
-                                </h3>
-                                 <div class="box__group">
-                                   <ul>
-                                     <li class="line_head">Nửa trên</li>
-                                     <li><a href="">Basic Tee</a></li>
-                                     <li><a href="">Sweetshirt</a></li>
-                                     <li><a href="">Hoodie</a></li>
-                                   </ul>
-                                   <ul>
-                                     <li class="line_head">Phụ kiện</li>
-                                     <li><a href="">Nón</a></li>
-                                     <li><a href="">Dây giày</a></li>
-                                     <li><a href="">Vớ</a></li>
-                                   </ul>
-                                   <a href="#" class="line_head">Tất cả giày</a>
-                                 </div>
-                               </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <a href="#" class="cameo">--------------------mọi người thường gọi chúng tôi là <span class="color--orange">dứa</span>!--------------------</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="menu-item">
-                  <a href="san-pham.html" class="d-flex">
-                    <h4>NỮ</h4>
-                    <i class="fas fa-chevron-down"></i>
-                  </a>
-                  <div class="menu-sub menu-sub--female">
-                    <div class="container container--w">
-                      <div class="d-flex my-3">
-                        <div class="col-md-4 col-sm-12">
-                          <div class="box box--devide">
-                            <h3>
-                              <a href="#">NỔI BẬT</a>
-                            </h3>
-                            <div class="box__group">
-                              <ul>
-                                <li><a href="">Best Seller</a></li>
-                                <li><a href="">New Arrival</a></li>
-                                <li><a href="">Sale off</a></li>
-                              </ul>
-                              <div>
-                                <div href="#" class="line_head">Tất cả giày</div>
-                                <a href="">Pineapple x Lucky Luke</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-8 col-sm-12 ml-5">
-                          <div class="d-flex">
-                            <div class="col-md-6">
-                              <div class="box">
-                               <h3>
-                                 <a href="#">GIÀY</a>
-                               </h3>
-                                <div class="box__group">
-                                  <ul>
-                                    <li class="line_head">Dòng sản phẩm</li>
-                                    <li><a href="">Basas</a></li>
-                                    <li><a href="">Vintas</a></li>
-                                    <li><a href="">Urbas</a></li>
-                                    <li><a href="">Pattas</a></li>
-                                    <li><a href="">Track 6</a></li>
-                                  </ul>
-                                  <ul>
-                                    <li class="line_head">Style</li>
-                                    <li><a href="">High Top</a></li>
-                                    <li><a href="">Low Top</a></li>
-                                    <li><a href="">Slip-on</a></li>
-                                  </ul>
-                                  <a href="#" class="line_head">Tất cả giày</a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="box">
-                                <h3>
-                                  <a href="#">THỜI TRANG & PHỤ KIỆN</a>
-                                </h3>
-                                 <div class="box__group">
-                                   <ul>
-                                     <li class="line_head">Nửa trên</li>
-                                     <li><a href="">Basic Tee</a></li>
-                                     <li><a href="">Sweetshirt</a></li>
-                                     <li><a href="">Hoodie</a></li>
-                                   </ul>
-                                   <ul>
-                                     <li class="line_head">Phụ kiện</li>
-                                     <li><a href="">Nón</a></li>
-                                     <li><a href="">Dây giày</a></li>
-                                     <li><a href="">Vớ</a></li>
-                                   </ul>
-                                   <a href="#" class="line_head">Tất cả giày</a>
-                                 </div>
-                               </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <a href="#" class="cameo">--------------------mọi người thường gọi chúng tôi là <span class="color--orange">dứa</span>!--------------------</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="menu-item">
-                  <a href="sale-off.html" class="d-flex">
-                    <h4>SALE OFF</h4>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="discover-you.html" class="d-flex">
-                    <img src="images/DiscoverYOU.png" alt="" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-3">
+            <div class="col col-md-2 col-sm-12"></div>
+            <div class="col col-md-5 col-sm-12">
               <form id="searchBox">
                 <div class="form-group d-flex">
                   <input
@@ -320,41 +42,115 @@
                     placeholder="Bạn cần tìm..."
                     aria-describedby="helpId"
                   />
-                  <a href="#" class="btn" id="searchBtn">
-                    <i class="fas fa-search"></i>
-                  </a>
+                  <button type="submit" class="btn" id="searchBtn"><i class="fas fa-search"></i></button>
                 </div>
               </form>
+            </div>
+            <div class="col-md-5 col-sm-12">
+              <ul class="d-flex">
+                <li>
+                  <a href="dang-nhap.html">
+                    <span id="get_name_user">Đăng nhập</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="dang-ky.html">Đăng ký</a>
+                </li>
+                <li>
+                  <a href="tra-cuu-don-hang.html">Tra cứu đơn hàng</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="sidebar">
+          <div class="container">
+            <div class="d-flex">
+              <div class="col-md-12">
+                <ul class="menu d-flex">
+                  <li class="menu-item">
+                    <a href="ve-chung-toi.html" class="d-flex">
+                      <h4>GIỚI THIỆU</h4>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="san-pham.html" class="d-flex">
+                      <h4>SẢN PHẨM</h4>
+                      <i class="fas fa-chevron-down"></i>
+                      <div class="menu-sub">
+                        <a href="" class="menu-link d-flex">
+                          <h5>ÁO DÀI</h5>
+                        </a>
+                        <a href="" class="menu-link d-flex">
+                          <h5>ĐẦM, VÁY</h5>
+                        </a>
+                        <a href="" class="menu-link d-flex">
+                          <h5>VEST</h5>
+                        </a>
+                        <a href="" class="menu-link d-flex">
+                          <h5>CHÂN VÁY</h5>
+                        </a>
+                        <a href="" class="menu-link d-flex">
+                          <h5>QUẦN</h5>
+                        </a>
+                        <a href="" class="menu-link d-flex">
+                          <h5>SET ĐỒ</h5>
+                        </a>
+                        <a href="" class="menu-link d-flex">
+                          <h5>ÁO KHOÁC</h5>
+                        </a>
+                      </div>
+                    </a>
+                  </li>
+                  
+                  <li class="menu-item">
+                    <a href="sale-off.html" class="d-flex">
+                      <h4>KHUYẾN MÃI</h4>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="lien-he.html" class="d-flex">
+                      <h4>LIÊN HỆ</h4>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="tin-tuc.html" class="d-flex">
+                      <h4>TIN TỨC</h4>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="gio-hang.html" class="d-flex">
+                      <img src="images/cart-icon.png" alt="" width="24">
+                      (<span>1</span>)</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </header>
-  <section id="section_banner">
-    <div id="ruleCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-            <a class="carousel-item active">
-                free shipping hoá đơn từ 800k!
-            </a>
-            <a class="carousel-item">
-                hàng 2 tuần nhận đổi - giày nữa năm bảo hành
-            </a>
-            <a class="carousel-item">
-                buy more pay less - áp dụng khi mua phụ kiện
-            </a>
-        </div>
-        <a class="carousel-control-prev" href="#ruleCarousel" role="button" data-slide="prev">
-            <!-- carousel-control-prev-icon -->
-            <span class="fas fa-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#ruleCarousel" role="button" data-slide="next">
-            <span class="fas fa-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-</section>
+  </div>
+
+</header>
+<section id="section_banner">
+  <div class="container-lg">
+      <div id="hotServiceCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner text-center">
+              <p class="carousel-item" data-bs-interval="3000">
+                  <strong>NHẬN ĐẶT MAY TRANG PHỤC THEO SỐ ĐO CỦA BẠN</strong>
+              </p>
+              <p class="carousel-item active" data-bs-interval="3000">
+                  <strong>TẶNG PHIẾU MUA HÀNG TRỊ GIÁ ĐẾN 10 TRIỆU !!!</strong>
+              </p>
+              <p class="carousel-item">
+                  <strong>NHẬN ĐỔI MỚI 100% NẾU SẢN PHẨM LỖI TỪ CỦA HÀNG</strong>
+              </p>
+            
+          </div>
+      </div>  
+  </div>
+</section> 
     <main id="customer_page" class="content">
         <div class="container">
           <div class="d-flex">
@@ -409,8 +205,8 @@
                   aria-labelledby="v-pills-home-tab"
                 >
                   <form id="frmInfoUser">
-                    <div class="form-group">
-                      <label for="ipName">Tên chủ tài khoản</label>
+                    <div class="form-group mb-2">
+                      <label for="ipName" class="form-label">Tên chủ tài khoản</label>
                       <input
                         type="text"
                         class="form-control"
@@ -419,9 +215,9 @@
                         readonly
                       />
                     </div>
-                    <div class="d-flex">
-                      <div class="form-group col-md-6">
-                        <label for="ip_lastname">Họ</label>
+                    <div class="d-flex mb-2">
+                      <div class="form-group col-md-6 m-1">
+                        <label for="ip_lastname" class="form-label">Họ</label>
                         <input
                           type="text"
                           class="form-control"
@@ -430,8 +226,8 @@
                           value="Trần"
                         />
                       </div>
-                      <div class="form-group col-md-6">
-                        <label for="ip_firstname">Tên</label>
+                      <div class="form-group col-md-6 m-1">
+                        <label for="ip_firstname" class="form-label">Tên</label>
                         <input
                           type="text"
                           class="form-control"
@@ -441,18 +237,18 @@
                       </div>
                     </div>
                     <div class="d-flex">
-                      <div class="form-group col-md-6">
-                        <label for="ipEmail">Email</label>
+                      <div class="form-group col-md-6 m-1">
+                        <label for="ipEmail" class="form-label">Email</label>
                         <input
                           type="email"
                           class="form-control"
                           id="ipEmail"
-                          placeholder="Ví dụ: ananas@gmail.com"
+                          placeholder="Ví dụ: example@gmail.com"
                           value="rintabtsit@gmail.com"
                         />
                       </div>
-                      <div class="form-group col-md-6">
-                        <label for="ipPhoneNumber">Số điện thoại</label>
+                      <div class="form-group col-md-6 m-1">
+                        <label for="ipPhoneNumber" class="form-label">Số điện thoại</label>
                         <input
                           type="text"
                           class="form-control"
@@ -463,24 +259,18 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="ipAddress1">Địa chỉ giao hàng</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="ipAddress1"
-                        placeholder="Địa chỉ nhà..."
-                        value="192, ấp An Khương, xã Hội An, huyện Chợ Mới, tỉnh An Giang"
-                      />
+                      <label for="validateAddress" class="form-label">Địa chỉ giao hàng</label>
+              <textarea class="form-control" id="validateAddress" placeholder="Nhập địa chỉ giao hàng đến" required>192, ấp An Khương, xã Hội An, huyện Chợ Mới, tỉnh An Giang</textarea>
                     </div>
-                    <div class="form-group">
-                      <label for="ipAddress12">Địa chỉ giao hàng khác</label>
+                    <!-- <div class="form-group">
+                      <label for="ipAddress12" class="form-label">Địa chỉ giao hàng khác</label>
                       <input
                         type="text"
                         class="form-control"
                         id="ipAddress12"
                         placeholder="Công ty, Tập đoàn, hoặc Trụ sở..."
                       />
-                    </div>
+                    </div> -->
                     <div class="form-group">
                       <div class="form-check">
                         <input
@@ -488,13 +278,13 @@
                           type="checkbox"
                           id="checkChangePW"
                         />
-                        <label class="form-check-label" for="checkChangePW">
+                        <label class="form-check-label form-label" for="checkChangePW">
                           Thay đổi mật khẩu
                         </label>
                       </div>
                       <div id="changePW" style="display: none;">
-                        <div class="form-group col-md-4">
-                          <label for="ipPWO">Mật khẩu cũ</label>
+                        <div class="form-group col-md-4 m-1">
+                          <label for="ipPWO" class="form-label">Mật khẩu cũ</label>
                           <input
                             type="password"
                             class="form-control"
@@ -502,8 +292,8 @@
                             placeholder="Nhập mật khẩu cũ"
                           />
                         </div>
-                        <div class="form-group col-md-4">
-                          <label for="ipPWN">Mật khẩu mới</label>
+                        <div class="form-group col-md-4 m-1">
+                          <label for="ipPWN" class="form-label">Mật khẩu mới</label>
                           <input
                             type="password"
                             class="form-control"
@@ -511,8 +301,8 @@
                             placeholder="Nhập mật khẩu mới"
                           />
                         </div>
-                        <div class="form-group col-md-4">
-                          <label for="ipRPW">Nhập lại</label>
+                        <div class="form-group col-md-4 m-1">
+                          <label for="ipRPW" class="form-label">Nhập lại</label>
                           <input
                             type="password"
                             class="form-control"
@@ -581,7 +371,7 @@
                     <tbody id="receipts">
                       <tr>
                         <th scope="row">DH001</th>
-                        <td>25/11/2020</td>
+                        <td>25/11/2022</td>
                         <td>Basas Mono - High Top - All White</td>
                         <td>1</td>
                         <td>582.000 VND</td>
@@ -603,128 +393,81 @@
         <a href="#sidebar" type="button" id="to_top_btn" class="btn" data-toggle="tooltip" data-placement="top" title="Back to Top">
             <i class="fas fa-chevron-up"></i>
           </a>
-          <!-- modal login -->
-          <div class="modal fade" id="funct_login" tabindex="-1" role="dialog" aria-labelledby="funct_login" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <div class="d-flex w-100">
-                    <div class="col-md-12">
-                    <img src="images/Logo_Ananas_Header.png" alt="logo" id="funct_login--logo">
-                    <h3 class="modal-title" id="funct_login--title">
-                        CHÀO MỪNG ĐẾN VỚI ANANAS
-                    </h3>
-                    </div>
-                    <div class="inner" id="btn_close">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
+    <!-- footer -->
+    <footer>
+      <div class="container-lg">
+          <div class="row py-5">
+              <div class="col col-lg-2">
+                  <div class="py-5 text-center">
+                      <a href="index.html">
+                          <img src="images/2.png" class="img-footer" alt="" width="150">
+                      </a>
+                      <div class="d-flex justify-content-center mt-3">
+
+                          <a href="" class="btn">
+                              <img src="images/icon_facebook.png" alt="">
+                          </a>
+                          <a href="" class="btn">
+                              <img src="images/icon_instagram.png" alt="">
+                          </a>
+                          <a href="" class="btn">
+                              <img src="images/icon_youtube.png" alt="">
+                          </a>
+                      </div>
                   </div>
-                </div>
-                <div class="modal-body">
-                  <form id="frm_login">
-                    <div class="form-group">
-                      <input type="email" name="ip_email" id="ip_email" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                      <input type="password" name="ip_pass" id="ip_pass" placeholder="Mật khẩu">
-                    </div>
-                    <a href="#" id="forget_pass">Quên mật khẩu?</a>
-                    <div class="form-group">
-                      <button><a href="#">Đăng nhập</a></button>
-                    </div>
-                  </form>
-                </div>
-                <div class="modal-footer">
-                  <p>Chưa có tài khoản tại Ananas? <a href="dang-ky.html">Đăng ký</a></p>
-                </div>
               </div>
-            </div>
+              <div class="col col-lg-3">
+                  <h4>SẢN PHẨM</h4>
+                  <ul class="menu-bot">
+                      <li><a href="damVay.html">Đầm, váy</a></li>
+                      <li><a href="aoDai.html">Áo dài</a></li>
+                      <li><a href="vest.html">Vest</a></li>
+                      <li><a href="chanVay.html">Chân váy</a></li>
+                      <li><a href="quan.html">Quần</a></li>
+                      <li><a href="setDo.html">Set đồ</a></li>
+                      <li><a href="aoKhoac.html">Áo khoác</a></li>
+                  </ul>
+              </div>
+              <div class="col col-lg-3">
+                  <h4> VỀ CÔNG TY</h4>
+                  <ul class="menu-bot">
+                      <li><a href="tuyen-dung.html">Tuyển dụng</a></li>
+                      <li><a href="lien-he.html">Liên hệ</a></li>
+                      <li><a href="#">Về MBA</a></li>
+                  </ul>
+                  <hr>
+                  <h4>THÀNH VIÊN</h4>
+                  <ul class="menu-bot">
+                      <li>Nguyễn Thị Trúc Mai</li>
+                      <li>Châu Quế Bình</li>
+                      <li>Trần Thu An</li>
+                  </ul>
+              </div>
+              <div class="col col-lg-4">
+                  <h4 class="ps-0">ĐĂNG KÝ ĐỂ NHẬN THÔNG BÁO</h4>
+                  <form>
+                      <div class="form-group mb-3">
+                          <input class="form-control" type="email"
+                              name="email" placeholder="email@example.com">
+                      </div>
+                      <button
+                          class="btn btn-primary">Gửi
+                      </button>
+                  </form>
+              </div>
+              <div class="col col-lg-12">
+                  <p class="text-center">
+                      Copy
+                      <i class="fa fa-copyright" aria-hidden="true"></i>
+                      2022 MBA. All rights reserved
+                  </p>
+              </div>
           </div>
-        <!-- footer -->
-        <footer>
-        <div class="container">
-            <div class="d-flex">
-                <div class="col-md-3">
-                    <div class="store d-flex">
-                        <img src="images/Store.png" alt="">
-                        <a href="tim-cua-hang.html" class="storeBtn btn">TÌM CỬA HÀNG</a>
-                    </div>
-                </div>
-                <div class="col-md-9">
-                    <div class="content-foot">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <ul class="menu-bot">
-                                    <li class="head">
-                                       SẢN PHẨM
-                                    </li>
-                                    <li><a href="san-pham.html">Giày Nam</a></li>
-                                    <li><a href="san-pham.html">Giày Nữ</a></li>
-                                    <li><a href="san-pham.html">Thời trang & Phụ kiện</a></li>
-                                    <li><a href="san-pham.html">Sale off</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3">
-                                <ul class="menu-bot">
-                                    <li class="head">
-                                        VỀ CÔNG TY
-                                    </li>
-                                    <li><a href="tuyen-dung.html">Dứa tuyển dụng</a></li>
-                                    <li><a href="lien-he.html">Liên hệ</a></li>
-                                    <li><a href="#">Về Ananas</a></li>
-                                    
-                                </ul>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="menu-bot">
-                                    <div class="head">
-                                        ANANAS SOCIAL
-                                    </div>
-                                    <div class="d-flex ">
-                                        <a href="#" class="socialIcon">
-                                            <img src="images/icon_social1.png" alt="">
-                                        </a>
-                                        <a href="#" class="socialIcon">
-                                            <img src="images/icon_social2.png" alt="">
-                                        </a>
-                                        <a href="#" class="socialIcon">
-                                            <img src="images/icon_social3.png" alt="">
-                                        </a>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <ul class="menu-bot">
-                                    <li class="head">
-                                        THÀNH VIÊN
-                                    </li>
-                                    <li>Trần Thu An</li>
-                                    <li>Từ Phước Thiện</li>
-                                    <li>Nguyễn Tiến</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <img src="images/Logo_Ananas_Footer.png" alt="">
-                            </div>
-                            <div class="col-md-6">
-                                <p>
-                                    Copy
-                                    <i class="fa fa-copyright" aria-hidden="true"></i>
-                                    2020 Ananas. All rights reserved
-                                </p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </footer>
+      </div>
+  </footer>
+   <!-- JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+   <script src="themes/js/main.js"></script>
       <script>
         $("#v-pills-tab a").click(function () {
           var getTxt = $(this).text();
