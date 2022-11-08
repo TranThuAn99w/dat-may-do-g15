@@ -1,4 +1,5 @@
 /* menu */
+
 header .container #sidebar ul.menu li.menu-item > a h4 {
     margin-right: 10px;
     font-weight: bold;
@@ -65,3 +66,18 @@ footer .content-foot .row:last-child p {
     margin-bottom: 15px;
     width: 155px;
 } */
+footer .content-foot .row:first-child .menu-bot .head {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 15px;
+}
+footer .content-foot .row:first-child .menu-bot li a {
+    color: #808080;
+    display: block;
+    width: 100%;
+}
+footer {
+    background: black;
+    padding-top: 3%;
+}
